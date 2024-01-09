@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/vue@3"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header><h1>Vue Course Goal</h1></header>
+      <section id="user-goal">
+        <h2>{{courseGoal}}</h2>
+        <p>{{displayGoal()}}</p>
+        <p><a v-bind:href="myPage">vahe.tech</a></p>
+        <button>Submit</button>
+        <input type="text" v-model="textInput" />
+        <p>Hello {{textInput}}</p>
+        <button v-on:click="add()">Add</button>
+        <br />
+        <hr />
+        <button v-on:click="reduce()">Reduce</button>
+        <p>Results:{{counter}}</p>
+        <input type="text" v-on:input="setName" />
+        <p>{{name}}</p>
+      </section>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
