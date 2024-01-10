@@ -11,7 +11,10 @@
     <div id="app">
       <header><h1>Vue Course Goal</h1></header>
       <section id="user-goal">
-        <h2>{{courseGoal}}</h2>
+        <button v-on:click="countPlus(5)">Add 5</button>
+        <p>Result {{counter}}</p>
+        <button v-on:click="countMinus(10)">Subtract 10</button>
+        <!-- <h2>{{courseGoal}}</h2>
         <p>{{displayGoal()}}</p>
         <p><a v-bind:href="myPage">vahe.tech</a></p>
         <button>Submit</button>
@@ -23,9 +26,9 @@
         <button v-on:click="reduce()">Reduce</button>
         <p>Results:{{counter}}</p>
         <input type="text" v-on:input="setName" />
-        <p>{{name}}</p>
+        <p>{{name}}</p> -->
       </section>
     </div>
-    <script src="index.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
